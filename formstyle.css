@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+form {
+  padding: 50px;
+  width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+:focus {
+  outline: 2px;
+  outline-color: blue;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+.form-row label {
+  display: block;
+  margin-bottom: 6px;
+}
+input[type="text"],
+input[type="adi"],
+input[type="email"],
+input[type="tel"],
+select,
+button,
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  height: 42px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-right: 15;
+  padding-left: 15;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: white;
+}
+input[type="text"]::placeholder,
+input[type="adi"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  color: rgb(175, 175, 175);
+}
+input[type="text"]:focus,
+input[type="adi"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+  border-color: blue;
+}
+textarea {
+  height: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 42px;
+  resize: vertical;
+  max-height: 200;
+}
+select{
+  -webkit-appearance:none ;
+  background-image: url("arrowDown.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px  center;
+  background-size: 15px;
+  }
+.radio-container label{
+display: inline-block;
+}
+.radio-container label+label{
+  margin-left: 20px;
+  }
+  button{
+    display: inline-block;
+    width: auto;
+    border: null;
+    background-color: white;
+  }
+  button[type="submit"]{
+    margin-left: 10px;
+    color: white;
+    background-color: rgb(60, 167, 255);
+  }

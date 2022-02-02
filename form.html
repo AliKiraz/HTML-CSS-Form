@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>Form Application</title>
+    <link rel="stylesheet" href="formstyle.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Form Application</h1>
+
+    <form action="https://httpbin.org/post" method="POST">
+      <input type="hidden" value="kullanici" name="dolduran" />
+      <div class="form-row">
+        <label for="adi">Adı: </label>
+        <input
+          id="adi"
+          name="adi"
+          type="text"
+          required
+          placeholder="Ali Kiraz"
+        />
+      </div>
+      <div class="form-row">
+        <label for="telefon">Telefon Numarası:</label>
+        <input id="telefon" name="telefon" type="tel" required />
+      </div>
+      <div class="form-row">
+        <label for="email">E-Mail:</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div class="form-row">
+        <label for="mesaj">Mesaj:</label>
+        <textarea id="mesaj" name="mesaj" rows="10" required></textarea>
+      </div>
+      <div class="form-row">
+        <label for="sehir">Şehir</label>
+        <select id="sehir" name="sehir" required>
+          <option value="istanbul">İstanbul</option>
+          <option value="zonguldak">Zonguldak</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <p>Sevdiğiniz Renk</p>
+        <div class="radio-container">
+          <label
+            ><input
+              id="renk"
+              type="radio"
+              name="renk"
+              value="kirmizi"
+            />Kırmızı</label
+          >
+          <label
+            ><input
+              id="renk"
+              type="radio"
+              name="renk"
+              value="yesil"
+            />Yeşil</label
+          >
+        </div>
+      </div>
+      <div class="form-row">
+        <button type="reset">Sıfırla</button>
+        <button  type="submit">Gönder</button>
+      </div>
+    </form>
+  </body>
+</html>
